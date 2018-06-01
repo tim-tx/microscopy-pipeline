@@ -1,4 +1,4 @@
-[[https://api.travis-ci.com/tim-tx/microscopy-pipeline.svg?branch=develop]]
+[[https://travis-ci.com/tim-tx/microscopy-pipeline][https://travis-ci.com/tim-tx/microscopy-pipeline.svg?branch=develop]]
 
 * Installation
   The recommended method is to use =pipenv= to install this project and its dependencies into a clean environment. This project uses a fork of cytoflow which may collide with an installation of upstream cytoflow elsewhere.
