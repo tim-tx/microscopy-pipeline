@@ -10,9 +10,9 @@ env:
     - PIPENV_IGNORE_VIRTUALENVS=1
 
 install:
-  pip install pipenv
-  pipenv install
+  - pip install pipenv
+  - pipenv install
 
 script:
-  pipenv shell
-  python -m unittest
+  - pipenv shell
+  - python -m unittest
