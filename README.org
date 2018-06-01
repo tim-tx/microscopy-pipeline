@@ -1,10 +1,14 @@
 * Installation
-  The recommended method is to use =pipenv= to install into a clean environment. This project uses a fork of cytoflow which may collide with an installation of upstream cytoflow elsewhere.
+  The recommended method is to use =pipenv= to install this project and its dependencies into a clean environment. This project uses a fork of cytoflow which may collide with an installation of upstream cytoflow elsewhere.
   #+BEGIN_SRC
     $ pipenv install
   #+END_SRC
+* Dependencies
+  If you use =pipenv= as above, the following will be installed for you in a local environment:
+  + [[https://github.com/tim-tx/microtaspy][microtaspy]], an image processing pipeline
+  + [[https://github.com/tim-tx/cytoflow-microscopy][cytoflow-microscopy]], a cytoflow fork that supports DataFrame input
 * Usage
   #+BEGIN_SRC
     $ pipenv shell
-    $ ...
+    $ python -m unittest
   #+END_SRC
