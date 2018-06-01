@@ -1,5 +1,5 @@
 * Installation
-  The recommended method is to use `pipenv` to install into a clean environment. This project uses a fork of cytoflow which may collide with an installation of upstream cytoflow elsewhere.
+  The recommended method is to use =pipenv= to install into a clean environment. This project uses a fork of cytoflow which may collide with an installation of upstream cytoflow elsewhere.
   #+BEGIN_SRC
     $ pipenv install
   #+END_SRC
