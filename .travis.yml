@@ -9,6 +9,24 @@ env:
     - PIPENV_VENV_IN_PROJECT=1
     - PIPENV_IGNORE_VIRTUALENVS=1
 
+# cytoflow specific
+addons:
+  apt:
+    sources:
+      - sourceline: 'deb http://mirrors.mit.edu/ubuntu/ trusty-backports main restricted universe multiverse'
+    packages:
+      - g++
+      - gfortran
+      - swig3.0
+      - python3-pyqt4
+      - libblas-dev
+      - liblapack-dev
+      - libatlas-dev
+
+before_install:
+  # make sure distutils can find swig
+  - ln -s `which swig3.0` ./swig; export PATH=`pwd`:$PATH
+    
 install:
   - pip install pipenv
   - pipenv install
