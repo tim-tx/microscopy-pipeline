@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+microtaspy = {git = "git://github.com/tim-tx/microtaspy.git", editable = true, ref = "develop"}
+cytoflow = {git = "git://github.com/tim-tx/cytoflow-microscopy.git", editable = true, ref = "master"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
