@@ -1,8 +1,7 @@
 language: python
 
 install:
-  pipenv install
+  pip install
 
 script:
-  pipenv shell
   python -m unittest
