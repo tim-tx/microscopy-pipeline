@@ -32,5 +32,5 @@ install:
   - pipenv install
 
 script:
-  - pipenv shell
-  - python -m unittest
+  - pipenv shell -c
+  - pipenv run -- python -m unittest
